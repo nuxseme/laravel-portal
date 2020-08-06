@@ -2,7 +2,9 @@ language: node_js
 node_js: stable
 
 install:
-  - npm install
+  - npm install -g  n
+  - n stable
+  - node --version
   - npm install gitbook-cli -g
   - npm install -g gitbook-summary
 
